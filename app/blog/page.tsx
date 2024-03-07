@@ -4,7 +4,7 @@ interface Post {
 }
 
 async function BlogPage() {
-    const response = await fetch("https://jsonplaceholder.typicode.com/posts", { cache: "no-store" });
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", { next: { revalidate: 5 } });
     let data: Post[] = await response.json();
     data = data.splice(0, 10)
     return (
