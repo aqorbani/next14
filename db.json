@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "messages": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "amir hossein qorbani",
+      "email": "a@a.com",
+      "message": "hello"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "iman noori",
+      "email": "d@d.com",
+      "message": "hi",
+      "id": 2
+    },
+    {
+      "name": "omid bordbar",
+      "email": "d@d.com",
+      "message": "message2",
+      "id": 3
+    },
+    {
+      "name": "david jones",
+      "email": "i@i.com",
+      "message": "message3",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
