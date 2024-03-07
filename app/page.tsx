@@ -11,6 +11,11 @@ function Home() {
           </Link>
         </li>
         <li>
+          <Link href="/contact">
+            Contact Page
+          </Link>
+        </li>
+        <li>
           <Link href="/blog">
             Blog Page
           </Link>
