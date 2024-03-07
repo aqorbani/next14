@@ -18,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={vazirfont.className}>{children}</body>
-    </html>
+      <body className={`m-0 p-0 ${vazirfont.className}`}>
+        <main className="p-2">
+          {children}
+        </main>
+      </body>
+    </html >
   );
 }
