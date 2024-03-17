@@ -1,3 +1,5 @@
+import connectDB from "@/utils/ConnectDB";
+
 export default function ServerTodoForm() {
     const addHandler = async (formData: FormData) => {
         "use server";
@@ -5,7 +7,10 @@ export default function ServerTodoForm() {
         const title = formData.get("title")
         const description = formData.get("description")
 
-        console.log(title)
+        await connectDB();
+
+
+
     }
     return (
         <div>
