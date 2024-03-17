@@ -6,6 +6,8 @@ export default async function TodoList() {
 
     const data = await Todo.find();
 
+
+
     return (
         <div>
             <hr />

@@ -1,5 +1,6 @@
 import Todo from "@/models/Todo";
 import connectDB from "@/utils/ConnectDB";
+import { revalidatePath } from "next/cache";
 
 export default function ServerTodoForm() {
     const addHandler = async (formData: FormData) => {
@@ -12,7 +13,7 @@ export default function ServerTodoForm() {
 
         const todo = await Todo.create({ title, description });
 
-        console.log(todo)
+        revalidatePath("/")
 
     }
     return (
