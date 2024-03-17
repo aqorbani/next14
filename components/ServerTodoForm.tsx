@@ -1,3 +1,4 @@
+import Todo from "@/models/Todo";
 import connectDB from "@/utils/ConnectDB";
 
 export default function ServerTodoForm() {
@@ -9,7 +10,9 @@ export default function ServerTodoForm() {
 
         await connectDB();
 
+        const todo = await Todo.create({ title, description });
 
+        console.log(todo)
 
     }
     return (
