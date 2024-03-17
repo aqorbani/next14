@@ -1,4 +1,5 @@
 import ServerTodoForm from "@/components/ServerTodoForm"
+import TodoList from "@/components/TodoList"
 import Link from "next/link"
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
       </ul>
       <hr />
       <ServerTodoForm />
+      <TodoList />
     </div>
   )
 }
