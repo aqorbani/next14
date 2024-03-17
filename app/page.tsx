@@ -1,3 +1,4 @@
+import ServerTodoForm from "@/components/ServerTodoForm"
 import Link from "next/link"
 
 function Home() {
@@ -21,6 +22,8 @@ function Home() {
           </Link>
         </li>
       </ul>
+      <hr />
+      <ServerTodoForm />
     </div>
   )
 }
