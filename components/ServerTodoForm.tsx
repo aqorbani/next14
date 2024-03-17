@@ -1,13 +1,12 @@
-"use client"
-
 export default function ServerTodoForm() {
-    const addHandler = (event: React.SyntheticEvent) => {
-        event.preventDefault()
-        console.log(event)
+    const addHandler = async () => {
+        "use server";
+        console.log("first")
+
     }
     return (
         <div>
-            <form onSubmit={addHandler}>
+            <form action={addHandler}>
                 <div>
                     <label htmlFor="title">title</label>
                     <input type="text" name="title" id="title" />
