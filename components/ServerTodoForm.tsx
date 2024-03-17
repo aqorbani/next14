@@ -1,8 +1,11 @@
 export default function ServerTodoForm() {
-    const addHandler = async () => {
+    const addHandler = async (formData: FormData) => {
         "use server";
-        console.log("first")
 
+        const title = formData.get("title")
+        const description = formData.get("description")
+
+        console.log(title)
     }
     return (
         <div>
